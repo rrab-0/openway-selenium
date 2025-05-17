@@ -49,38 +49,5 @@ public class TestProduct {
                 .goToCartPage().get();
 
         Assert.assertTrue(cartPage.isProductInCart(foundProductName));
-
-        ///
-
-        // // go to homepage
-        // HomePage homePage = new HomePage(driver);
-        // homePage.get();
-        //
-        // // click Sign In
-        // LoginPage loginPage = homePage.goToLoginPage();
-        // loginPage.get();
-        //
-        // // sign in
-        // AccountPage accountPage = loginPage.login(email, password);
-        // accountPage.get();
-        //
-        // // search product by name
-        // String productName = "dune";
-        // SearchProductPage searchProductPage = accountPage.searchProduct(productName);
-        // searchProductPage.get();
-        //
-        // // click the link of the first product found
-        // Product foundProduct = searchProductPage.getFirstProductFound();
-        // String foundProductName = foundProduct.getName();
-        // ProductPage productPage = searchProductPage.clickProductLink(foundProduct);
-        //
-        // // click add to cart
-        // productPage.addProductToCart();
-        //
-        // // go to cart page
-        // CartPage cartPage = productPage.goToCartPage();
-        // cartPage.get();
-        //
-        // Assert.assertTrue(cartPage.isProductInCart(foundProductName));
     }
 }
