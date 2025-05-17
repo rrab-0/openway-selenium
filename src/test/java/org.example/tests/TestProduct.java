@@ -30,10 +30,10 @@ public class TestProduct {
         driver.quit();
     }
 
-    @Test(description = "able to add product to cart")
+    @Test(description = "Registered user adds product to cart starting from homepage.")
     public void ableToAddProductToCart() {
         AccountPage accountPage = new HomePage(driver).get()
-                .goToLoginPage().get()
+                .clickSignInButton().get()
                 .login(email, password).get();
 
         String productName = "dune";

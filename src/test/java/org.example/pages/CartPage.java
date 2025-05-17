@@ -38,6 +38,8 @@ public class CartPage extends LoadableComponent<CartPage> {
                 .findElement(By.className("product-name"))
                 .findElement(By.tagName("a"))
                 .getText();
+            System.out.println("expected product: " + productName);
+            System.out.println("cart product: " + foundProductName);
             return foundProductName.equals(productName);
         } catch (NoSuchElementException e) {
             return false;

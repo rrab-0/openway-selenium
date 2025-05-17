@@ -30,7 +30,7 @@ public class HomePage extends LoadableComponent<HomePage> {
         }
     }
 
-    public LoginPage goToLoginPage() {
+    public LoginPage clickSignInButton() {
         driver.findElement(By.linkText("Sign In")).click();
         return new LoginPage(driver);
     }
